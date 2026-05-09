@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Azafra International - Agencia Aduanal en Veracruz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "error": "#ba1a1a",
+                "tertiary-container": "#4e596d",
+                "surface-container": "#eceef0",
+                "surface": "#f7f9fb",
+                "secondary-fixed-dim": "#b9c7e0",
+                "on-tertiary-fixed-variant": "#3c475a",
+                "on-secondary-fixed": "#0d1c2f",
+                "on-primary-container": "#ffc1b6",
+                "surface-dim": "#d8dadc",
+                "on-tertiary-fixed": "#111c2d",
+                "tertiary-fixed": "#d8e3fb",
+                "secondary-container": "#d5e3fd",
+                "primary-fixed-dim": "#ffb4a7",
+                "inverse-on-surface": "#eff1f3",
+                "background": "#f7f9fb",
+                "on-error": "#ffffff",
+                "on-surface-variant": "#5b403b",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#910a00",
+                "surface-tint": "#b81f0d",
+                "secondary-fixed": "#d5e3fd",
+                "on-secondary-fixed-variant": "#3a485c",
+                "error-container": "#ffdad6",
+                "surface-container-high": "#e6e8ea",
+                "surface-variant": "#e0e3e5",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#e0e3e5",
+                "outline-variant": "#e4beb7",
+                "on-tertiary-container": "#c5d0e8",
+                "on-primary-fixed": "#400200",
+                "primary-container": "#b01807",
+                "on-background": "#191c1e",
+                "tertiary": "#374255",
+                "tertiary-fixed-dim": "#bcc7de",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#ffdad4",
+                "on-surface": "#191c1e",
+                "inverse-surface": "#2d3133",
+                "inverse-primary": "#ffb4a7",
+                "primary": "#870800",
+                "secondary": "#515f74",
+                "outline": "#90706a",
+                "on-secondary-container": "#57657b",
+                "surface-container-low": "#f2f4f6",
+                "on-primary": "#ffffff",
+                "surface-bright": "#f7f9fb",
+                "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "container-max": "1440px",
+                "stack-xl": "48px",
+                "gutter": "24px",
+                "stack-md": "16px",
+                "unit": "8px",
+                "stack-sm": "8px",
+                "stack-xs": "4px",
+                "stack-lg": "24px",
+                "margin-mobile": "16px",
+                "margin-desktop": "48px"
+        },
+        "fontFamily": {
+                "body-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "body-sm": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Manrope"
+                ],
+                "headline-sm": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Manrope"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "1.5",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-bold": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "20px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "1",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- Top Bar -->
+<div class="bg-primary-container text-on-primary-container hidden md:block">
+<div class="max-w-[1280px] mx-auto px-12 py-2 flex justify-between items-center text-body-sm font-body-sm">
+<div class="flex items-center gap-gutter">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">phone</span> +52 (229) 123 4567</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">mail</span> contacto@azafra.com</span>
+</div>
+<div class="flex items-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Atención 24/7
+            </div>
+</div>
+</div>
+<!-- TopAppBar -->
+<header class="bg-surface-bright dark:bg-surface sticky full-width top-0 z-50 border-b border-outline-variant dark:border-outline flat no shadows">
+<div class="max-w-[1280px] mx-auto px-12 py-4 flex items-center justify-between w-full">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed tracking-tight">Azafra International</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center font-body-md text-body-md font-semibold">
+<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed pb-1 Active: scale 0.98x transition-transform duration-150" href="#">Inicio</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200" href="#">Servicios</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200" href="#">Industrias</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200" href="#">Nosotros</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200" href="#">Recursos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-2">
+<button class="p-2 text-primary dark:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">support_agent</span>
+</button>
+<button class="p-2 text-primary dark:text-primary-fixed hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all duration-200 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">mail</span>
+</button>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-body-sm font-bold hover:opacity-90 transition-opacity">Cotiza tu despacho</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Hero background" class="w-full h-full object-cover" data-alt="A wide-angle, cinematic view of the bustling Port of Veracruz at sunrise. High-end professional photography style. The scene is dominated by massive cargo ships, rows of colorful shipping containers, and towering gantry cranes silhouetted against a dramatic, colorful morning sky. The lighting is soft and golden, casting long shadows and highlighting the vast scale of global logistics. The overall aesthetic feels powerful, reliable, and deeply embedded in international trade, matching a premium corporate color palette of deep navies and warm ambers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLmW4bQDA5aOe8deL1LpS6OaHKrgp91XgUD7G2D1uqyqAzm3EZ3OL4h9eA3iJrwNrT11c8QeiHOKf0hJmwiStx97d34zNgoyC61VBjoBUE8lMNuSBkK6Dwy0at9qoN7dYKuTUsN_hE8tyBgbfUqADWFrQDwuXBnMfxD2P2dTlICnozXbz2klhtOXmmCDExxGiG40q2UKmRhLXARzXtBuRbC1auuLJYRpejYfVfW83U3tgSJMqlukA5my4NHPdzXuVKN2M9kBhsTwgE"/>
+<div class="absolute inset-0 bg-primary/60"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center py-margin-desktop">
+<!-- Hero Content -->
+<div class="col-span-1 lg:col-span-7 text-white">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg font-extrabold text-on-primary mb-6 leading-tight">
+                    Tu mercancía cruza la aduana sin contratiempos.
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-primary mb-8 max-w-2xl">
+                    Agencia aduanal con patente propia y más de 30 años de experiencia garantizando despachos ágiles, seguros y en total cumplimiento normativo.
+                </p>
+<div class="flex flex-wrap gap-4 mb-12">
+<button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-DEFAULT font-bold text-body-md hover:opacity-90 transition-opacity">
+                        Cotiza en 24h
+                    </button>
+<button class="border border-on-primary text-on-primary px-8 py-3 rounded-DEFAULT font-bold text-body-md hover:bg-on-primary/10 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">chat</span> WhatsApp
+                    </button>
+</div>
+<!-- Trust Badges -->
+<div class="flex items-center gap-6 opacity-80">
+<span class="font-body-sm font-bold tracking-wider">RESPALDADOS POR:</span>
+<span class="font-headline-sm font-bold">SAT</span>
+<span class="font-headline-sm font-bold">OEA</span>
+<span class="font-headline-sm font-bold">ISO 9001</span>
+</div>
+</div>
+<!-- Mini Form -->
+<div class="col-span-1 lg:col-span-5">
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_12px_32px_rgba(10,37,64,0.12)] border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Solicita una cotización rápida</h3>
+<form class="space-y-4">
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Nombre Completo</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" placeholder="Ej. Juan Pérez" type="text"/>
+</div>
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Empresa</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" placeholder="Nombre de tu empresa" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Teléfono</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" placeholder="10 dígitos" type="tel"/>
+</div>
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Tipo de Operación</label>
+<select class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright">
+<option>Importación</option>
+<option>Exportación</option>
+</select>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-3 rounded-DEFAULT mt-4 hover:bg-primary-container transition-colors" type="button">
+                            Enviar Solicitud
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Logos -->
+<section class="py-12 bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-12">
+<p class="text-center font-body-sm text-on-surface-variant uppercase tracking-widest mb-8">Empresas que confían en nosotros</p>
+<div class="flex justify-between items-center opacity-50 grayscale gap-8 overflow-hidden">
+<!-- Placeholders for logos -->
+<div class="font-headline-md font-bold">Empresa A</div>
+<div class="font-headline-md font-bold">Logística Corp</div>
+<div class="font-headline-md font-bold">Global Trade</div>
+<div class="font-headline-md font-bold">Industrias B</div>
+<div class="font-headline-md font-bold">Agro Export</div>
+</div>
+</div>
+</section>
+<!-- Value Prop -->
+<section class="py-margin-desktop bg-background">
+<div class="max-w-[1280px] mx-auto px-12">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md md:text-[36px] font-extrabold text-primary mb-4">Más que una agencia aduanal: tu socio en comercio exterior.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">Diseñamos soluciones logísticas integrales que reducen costos, tiempos y riesgos en cada operación.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)] hover:shadow-[0_12px_32px_rgba(10,37,64,0.12)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Despacho Ágil (&lt;24h)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Optimizamos procesos documentales para liberar tu carga en tiempo récord.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)] hover:shadow-[0_12px_32px_rgba(10,37,64,0.12)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Cobertura Nacional</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Patente propia operando en las principales aduanas marítimas, terrestres y aéreas.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)] hover:shadow-[0_12px_32px_rgba(10,37,64,0.12)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined">my_location</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Rastreo en Tiempo Real</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visibilidad total de tu embarque desde el origen hasta el destino final.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)] hover:shadow-[0_12px_32px_rgba(10,37,64,0.12)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Atención Personalizada 24/7</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ejecutivos de cuenta dedicados a tu operación, siempre disponibles.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quiénes Somos Section -->
+<section class="py-margin-desktop bg-surface-container-lowest">
+<div class="max-w-[1280px] mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative rounded-lg overflow-hidden shadow-xl"><div class="flex items-center justify-center p-12 lg:p-24 bg-surface-container-low rounded-lg h-full">
+<img alt="Azafra International Logo" class="w-full max-w-[400px] h-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug71qZqylNQdqRm0HsmSev2bBSx_YFeQK3W1A1Jn4gQ2Cv-xa7RFMGKSS6mifPmApQBITGi3HphRNd8PukNkknjBxPerF16t1SSnK8iCxd47eyT0A0CHB-SFGJZwQoZama-oD5ypTn9RBWrOesWh4dbRwGqhItciCrNiMifj6oUs4aICw-pe_txdi1JoAKkoh7_iz7aV5xzfVG2WycjUp2Pqoqmu7DcbZtpSxD7mctJ8xFRggm1iAD3lcL19mFW09ytY74MhN-U_w"/>
+</div></div>
+<div class="space-y-6">
+<h2 class="font-headline-lg text-headline-lg font-extrabold text-primary leading-tight">Más de 20 años de experiencia impulsando el comercio exterior.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-body-lg text-body-lg text-on-surface-variant">Agencia Aduanal Azafra cuenta con más de 20 años ininterrumpidos de prestar servicio como Agencia Aduanal nuestra compañía fue fundada el día 14 de Noviembre de 1994, cuando la Administración General de Aduanas otorga la Patente Local de Agente Aduanal a CP Adriana Zarate Fraustro. (Patente 1309), Hoy en día Agencia Aduanal Azafra se ha transformado en un operador logístico que ofrece a nuestros clientes tener el control de sus mercancías unificando, transporte, despacho aduanal y logística a través de un solo proveedor. Para satisfacer las necesidades de un mercado cambiante y con la finalidad de apoyar a nuestros clientes a reducir tiempo y costos.</p>
+<div class="pt-4 flex flex-wrap gap-8">
+<div class="flex flex-col">
+<span class="font-display-lg text-primary text-[40px] font-extrabold">30+</span>
+<span class="font-label-bold text-on-surface-variant uppercase tracking-wider">Años de Trayectoria</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-primary text-[40px] font-extrabold">10k+</span>
+<span class="font-label-bold text-on-surface-variant uppercase tracking-wider">Despachos Anuales</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-primary text-[40px] font-extrabold">100%</span>
+<span class="font-label-bold text-on-surface-variant uppercase tracking-wider">Cumplimiento Fiscal</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid (Bento style) -->
+<section class="py-margin-desktop bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-12">
+<h2 class="font-headline-md text-headline-md font-extrabold text-primary mb-12 border-b border-outline-variant pb-4">Nuestros Servicios</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Large Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)] flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center rounded-DEFAULT mb-6">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<h3 class="font-headline-md text-headline-sm font-bold text-primary mb-4">Despacho Aduanal Integral</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Gestión completa de importaciones y exportaciones con estricto apego a la ley aduanera. Minimiza riesgos y evita multas.</p>
+</div>
+<button class="self-start font-body-sm font-bold text-secondary flex items-center gap-2 hover:text-primary transition-colors">
+                        Ver detalles <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Normal Card -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)]">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-DEFAULT mb-4">
+<span class="material-symbols-outlined">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mb-2">Clasificación Arancelaria</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Determinación precisa para el correcto pago de contribuciones.</p>
+<button class="font-body-sm font-bold text-secondary hover:text-primary transition-colors">Saber más</button>
+</div>
+<!-- Normal Card -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)]">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-DEFAULT mb-4">
+<span class="material-symbols-outlined">business</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mb-2">Programas IMMEX</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Asesoría y gestión para maquiladoras y empresas manufactureras.</p>
+<button class="font-body-sm font-bold text-secondary hover:text-primary transition-colors">Saber más</button>
+</div>
+<!-- Normal Card -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)]">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-DEFAULT mb-4">
+<span class="material-symbols-outlined">flight_takeoff</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mb-2">Freight Forwarding</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Coordinación de fletes internacionales terrestres, marítimos y aéreos.</p>
+<button class="font-body-sm font-bold text-secondary hover:text-primary transition-colors">Saber más</button>
+</div>
+<!-- Normal Card -->
+<div class="bg-surface-container-lowest p-8 rounded-lg border border-outline-variant shadow-[0_4px_20px_rgba(10,37,64,0.05)]">
+<div class="w-10 h-10 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-DEFAULT mb-4">
+<span class="material-symbols-outlined">warehouse</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mb-2">Almacenaje y Logística</h3>
+<p class="font-body-sm text-on-surface-variant mb-4">Soluciones de resguardo y distribución estratégica.</p>
+<button class="font-body-sm font-bold text-secondary hover:text-primary transition-colors">Saber más</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="bg-primary text-on-primary py-margin-desktop">
+<div class="max-w-[1280px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-md text-[36px] font-extrabold mb-6">¿Listo para optimizar tu cadena de suministro?</h2>
+<p class="font-body-lg text-inverse-primary mb-8">Déjanos tus datos y un experto se comunicará contigo en menos de 2 horas para evaluar tus necesidades logísticas.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-container">location_on</span>
+<span class="">Veracruz, Ver. México</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-container">phone</span>
+<span class="">+52 (229) 123 4567</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest text-on-surface p-8 rounded-lg">
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Nombre</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" type="text"/>
+</div>
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Empresa</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Correo Electrónico</label>
+<input class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" type="email"/>
+</div>
+<div>
+<label class="block font-body-sm font-bold text-on-surface-variant mb-1">Volumen Estimado / Mensaje</label>
+<textarea class="w-full border-outline-variant rounded-DEFAULT focus:border-secondary focus:ring-secondary focus:ring-2 bg-surface-bright" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-bold py-3 rounded-DEFAULT mt-4 hover:opacity-90 transition-opacity" type="button">
+                        Solicitar Asesoría
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="max-w-[1280px] mx-auto px-12 py-12 grid grid-cols-1 md:grid-cols-4 gap-gutter font-body-sm text-body-sm">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary dark:text-primary mb-4 block">Azafra International</span>
+<p class="text-on-primary-container dark:text-on-surface-variant mb-4">Operador Logístico y Aduanero Global.</p>
+</div>
+<div>
+<h4 class="font-bold text-on-primary mb-4">Servicios</h4>
+<ul class="space-y-2 text-on-primary-container dark:text-on-surface-variant">
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Servicios Aduaneros</a></li>
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Transporte Internacional</a></li>
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Almacenaje</a></li>
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Consultoría</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-primary mb-4">Legal</h4>
+<ul class="space-y-2 text-on-primary-container dark:text-on-surface-variant">
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Términos y Condiciones</a></li>
+<li class=""><a class="hover:text-tertiary-fixed-dim transition-colors" href="#">Política de Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-primary mb-4">Contacto</h4>
+<ul class="space-y-2 text-on-primary-container dark:text-on-surface-variant">
+<li class="">Oficina Matriz Veracruz</li>
+<li class="">contacto@azafra.com</li>
+<li class="">+52 229 123 4567</li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-12 py-4 border-t border-on-primary/10 text-on-primary-container text-body-sm">
+            © 2024 Azafra International. Todos los derechos reservados. Operador Logístico y Aduanero Global.
+        </div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-105 transition-transform z-50 flex items-center justify-center" href="#">
+<span class="material-symbols-outlined fill text-[32px]">chat</span>
+</a>
+</body></html>
